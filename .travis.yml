@@ -7,4 +7,4 @@ before_install:
   - docker build -t cursodocker -f Docker.dev .
 
 script:
-  - docker run -e cursodocker npm run test -- --coverage
+  - docker run cursodocker npm run test -- --coverage
